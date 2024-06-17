@@ -1,0 +1,83 @@
+<Page
+    x:Class="ToDoApp.Views.Pages.TodoPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:ToDoApp.Views.Pages"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+    xmlns:vm="clr-namespace:ToDoApp.ViewModels.Pages"
+    xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+    Title="TodoPage"
+    d:DataContext="{d:DesignInstance vm:TodoViewModel, IsDesignTimeCreatable=False}"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    ui:Design.Background="{DynamicResource ApplicationBackgroundBrush}"
+    ui:Design.Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+    Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+    mc:Ignorable="d">
+
+    <Page.DataContext>
+        <vm:TodoViewModel />
+    </Page.DataContext>
+
+    <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="10">
+            <TextBox Width="300" Text="{Binding NewTodo, UpdateSourceTrigger=PropertyChanged}"  Margin="5"/>
+            <Button Content="Add" Command="{Binding AddNewTodoCommand}" Margin="5"/>
+        </StackPanel>
+
+        <ItemsControl Grid.Row="2" ItemsSource="{Binding TodoItems, UpdateSourceTrigger=PropertyChanged}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <CheckBox Grid.Column="0"
+                          IsChecked="{Binding Done, UpdateSourceTrigger=PropertyChanged}"
+                          VerticalAlignment="Center"
+                          Margin="5">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="Checked">
+                                    <i:InvokeCommandAction Command="{Binding DataContext.MarkAsCompleteCommand, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" CommandParameter="{Binding}" />
+                                </i:EventTrigger>
+                                <i:EventTrigger EventName="Unchecked">
+                                    <i:InvokeCommandAction Command="{Binding DataContext.MarkAsCompleteCommand, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" CommandParameter="{Binding}" />
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </CheckBox>
+
+
+
+
+                        <TextBlock 
+                            Grid.Column="1" 
+                            Text="{Binding Task, UpdateSourceTrigger=PropertyChanged}" 
+                            VerticalAlignment="Center" 
+                            FontSize="16" 
+                            Margin="5"/>
+                        <ui:Button 
+                            Grid.Column="2" 
+                            Content="Delete"
+                            VerticalAlignment="Center" 
+                            FontSize="16" 
+                            FontWeight="Bold"
+                            Margin="5"
+                            Command="{Binding DataContext.DeleteCommand, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" 
+                            CommandParameter="{Binding}" />
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+    </Grid>
+</Page>

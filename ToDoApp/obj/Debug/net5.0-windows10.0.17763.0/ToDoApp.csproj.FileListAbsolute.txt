@@ -1,0 +1,11 @@
+C:\Users\Erick\Desktop\PomodoroTimer\ToDoApp\obj\Debug\net5.0-windows10.0.17763.0\ToDoApp.csproj.AssemblyReference.cache
+C:\Users\Erick\Desktop\PomodoroTimer\ToDoApp\obj\Debug\net5.0-windows10.0.17763.0\App.baml
+C:\Users\Erick\Desktop\PomodoroTimer\ToDoApp\obj\Debug\net5.0-windows10.0.17763.0\Views\Pages\BreakPage.g.cs
+C:\Users\Erick\Desktop\PomodoroTimer\ToDoApp\obj\Debug\net5.0-windows10.0.17763.0\Views\Pages\DashboardPage.g.cs
+C:\Users\Erick\Desktop\PomodoroTimer\ToDoApp\obj\Debug\net5.0-windows10.0.17763.0\Views\Pages\SettingsPage.g.cs
+C:\Users\Erick\Desktop\PomodoroTimer\ToDoApp\obj\Debug\net5.0-windows10.0.17763.0\Views\Windows\MainWindow.g.cs
+C:\Users\Erick\Desktop\PomodoroTimer\ToDoApp\obj\Debug\net5.0-windows10.0.17763.0\App.g.cs
+C:\Users\Erick\Desktop\PomodoroTimer\ToDoApp\obj\Debug\net5.0-windows10.0.17763.0\ToDoApp_Content.g.cs
+C:\Users\Erick\Desktop\PomodoroTimer\ToDoApp\obj\Debug\net5.0-windows10.0.17763.0\GeneratedInternalTypeHelper.g.cs
+C:\Users\Erick\Desktop\PomodoroTimer\ToDoApp\obj\Debug\net5.0-windows10.0.17763.0\ToDoApp_MarkupCompile.cache
+C:\Users\Erick\Desktop\PomodoroTimer\ToDoApp\obj\Debug\net5.0-windows10.0.17763.0\ToDoApp_MarkupCompile.lref

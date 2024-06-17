@@ -1,0 +1,63 @@
+<Page
+    x:Class="ToDoApp.Views.Pages.BreakPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:ToDoApp.Views.Pages"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="clr-namespace:ToDoApp.Models"
+    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+    Title="BreakPage"
+    d:DataContext="{d:DesignInstance local:BreakPage,
+                                     IsDesignTimeCreatable=False}"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    ui:Design.Background="{DynamicResource ApplicationBackgroundBrush}"
+    ui:Design.Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+    Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+    ScrollViewer.CanContentScroll="False"
+    mc:Ignorable="d">
+
+    <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock 
+        Grid.Row="0"
+        VerticalAlignment="Center"
+        HorizontalAlignment="Center"
+        FontSize="30" FontWeight="Bold" 
+        Text="Time for a break!" 
+    />
+
+        <TextBlock
+        Grid.Row="2"
+        VerticalAlignment="Center"
+        FontSize="30" FontWeight="Bold" 
+        Text="{Binding ViewModel.TimePassed, UpdateSourceTrigger=PropertyChanged}" />
+        <Grid Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Grid.Resources >
+                <Style TargetType="Grid" >
+                    <Setter Property="Margin" Value="5" />
+                </Style>
+            </Grid.Resources>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+                <ui:Button Command="{Binding ViewModel.StartTimerCommand, Mode=OneWay}" Content="Start"/>
+            </Grid>
+
+            <Grid Grid.Column="1">
+                <ui:Button  Command="{Binding ViewModel.UpdateTimeRemainingCommand}" Content="Restart"/>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Page>
