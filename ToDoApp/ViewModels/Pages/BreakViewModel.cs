@@ -88,7 +88,7 @@ namespace ToDoApp.ViewModels.Pages
             {
                 if (timeRemaining.TotalSeconds <= 0)
                 {
-                    // Reset the timer only if it was not already started
+                    // Reseta o timer somente se não tiver sido iniciado
                     UpdateTimeRemaining();
                     UpdateTimePassed(timeRemaining);
                 }
