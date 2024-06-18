@@ -45,6 +45,8 @@ Métodos Principais:
 
 **AddNewTodo():** Adiciona uma nova tarefa ao banco de dados e atualiza a lista de tarefas.
 
+*Obs : É necessário um arquivo appsettings.json para configurar o banco de dados MongoDB.*
+
 ### 4. SettingsViewModel
 
 Controla as configurações do aplicativo, como tempo dos timers Pomodoro e temas de aparência.

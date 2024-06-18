@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Erick\Desktop\PomodoroTimer\ToDoApp\obj\Release\net8.0-windows10.0.17763.0\
+C:\Users\Erick\Desktop\PomodoroApp\PomodoroTimer\ToDoApp\obj\Release\net8.0-windows10.0.17763.0\
 PomodoroApp
 none
 false
 TRACE;RELEASE;NET;NET8_0;NETCOREAPP
-C:\Users\Erick\Desktop\PomodoroTimer\ToDoApp\App.xaml
+C:\Users\Erick\Desktop\PomodoroApp\PomodoroTimer\ToDoApp\App.xaml
 5150984338
 1282391436
-22-374465940
-241-1843969777
+23-1130477909
+244-2080155900
 Views\Pages\BreakPage.xaml;Views\Pages\DashboardPage.xaml;Views\Pages\SettingsPage.xaml;Views\Pages\TodoPage.xaml;Views\Windows\MainWindow.xaml;
 
-False
+True
 

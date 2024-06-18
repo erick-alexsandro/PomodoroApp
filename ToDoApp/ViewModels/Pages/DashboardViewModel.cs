@@ -14,6 +14,7 @@ namespace ToDoApp.ViewModels.Pages
     //Classe principal do programa. Responsável pela exibição do timer Pomodoro
     public partial class DashboardViewModel : BaseViewModel
     {
+        private bool start;
         private System.Timers.Timer countdownTimer; // Timer que decrementa o tempo a cada segundo
         private TimeSpan timeRemaining; // Variável que armazena o tempo restante da sessão pomodoro
 
@@ -85,6 +86,7 @@ namespace ToDoApp.ViewModels.Pages
         internal override void CompleteSession()
         {
             countdownTimer.Stop();
+            start = false;
             SessionsCompleted++;
             MessageSession = $"You have completed {SessionsCompleted} sessions.";
             TimePassed = "Work completed!";

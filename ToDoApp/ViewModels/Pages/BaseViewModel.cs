@@ -50,7 +50,6 @@ namespace ToDoApp.ViewModels.Pages
         // Método virtual que é chamado para completar a sessão. Ele define start como falso, atualiza timePassed para "Break completed!", e envia uma notificação ao usuário
         internal virtual void CompleteSession()
         {
-            start = false;
             TimePassed = "Break completed!";
             SettingsService.Instance.BreakInProgress = false;
             NotifyUser("Break done!", "Time to get back to work!");

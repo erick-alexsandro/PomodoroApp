@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PomodoroApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e7c8404b83813bb44682839a1906b18e0ac2105")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+faa32d5c3b825b7bfc7cf7b2c58932ecb75308b6")]
 [assembly: System.Reflection.AssemblyProductAttribute("PomodoroApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PomodoroApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

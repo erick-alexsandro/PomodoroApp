@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PomodoroApp
-build_property.ProjectDir = C:\Users\Erick\Desktop\PomodoroTimer\ToDoApp\
+build_property.ProjectDir = C:\Users\Erick\Desktop\PomodoroApp\PomodoroTimer\ToDoApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -12,6 +12,7 @@ namespace ToDoApp.ViewModels.Pages
     //Classe responsável pela exibição do timer de descanso das atividades do aluno
     public partial class BreakViewModel : BaseViewModel
     {
+        private bool start;
         private System.Timers.Timer countdownTimer; // Timer que decrementa o tempo a cada segundo.
         private TimeSpan timeRemaining; // Variável que armazena o tempo restante do intervalo.
 
@@ -75,6 +76,7 @@ namespace ToDoApp.ViewModels.Pages
         internal override void CompleteSession()
         {
             countdownTimer.Stop();
+            start = false;
             base.CompleteSession();
         }
 
