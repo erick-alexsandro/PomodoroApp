@@ -1,6 +1,8 @@
 # PomodoroApp
 This was an assignment to complete the second semester of the Computer Science course.
->**Note**: Make sure you have created your own MongoDB "PomodoroDatabase" collection named "TodoList," and assigned its connection to the appsettings.json in the correct bin folder.
+> [!IMPORTANT]
+> Make sure you have created your own MongoDB "PomodoroDatabase" collection named "TodoList," and assigned its connection to the appsettings.json in the correct bin folder.
+>
 
 # Overview
 PomodoroApp is a free and open-source application that helps users manage their tasks and study sessions using the Pomodoro technique. It includes features for creating, editing, and completing tasks, as well as controlling work and break times.
