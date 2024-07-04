@@ -35,10 +35,9 @@ SettingsViewModel controls the application settings, such as Pomodoro timer dura
 # WUI
 PomodoroApp provides a simple and effective user interface to help users stay focused. This interface can also be used to manage tasks that will be completed during study sessions.
 
-**Dashboard view page**
+**Dashboard view page**\
+*The Break view page is similar to the Work page*
 ![DashboardView](https://media.discordapp.net/attachments/779085525700444170/1253538441568849991/image.png?ex=66763826&is=6674e6a6&hm=9fd00863b00b3fe509b5eaa576634cc186e3ec504184b97424938d4108826aa4&=&format=webp&quality=lossless&width=1042&height=558)
-**Break view page**
-![BreakViewModel](https://media.discordapp.net/attachments/779085525700444170/1253538696825933965/image.png?ex=66763862&is=6674e6e2&hm=5469e477393d6927ebe629993dff5a11234434bc5e4e27144d7af85c0b857f58&=&format=webp&quality=lossless&width=1043&height=558)
 **TodoList view page**
 ![TodoListViewModel](https://media.discordapp.net/attachments/779085525700444170/1253538902262943804/image.png?ex=66763893&is=6674e713&hm=e45d04eb26daab815b3ac7abbec0f1730a5a2e3a6b65b246ba156cfbf86e9d2d&=&format=webp&quality=lossless&width=1040&height=558)
 **Settings view page**
